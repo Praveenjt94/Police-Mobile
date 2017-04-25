@@ -1,0 +1,25 @@
+{
+  "name": "police_mobile",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Buwaneka Boralessa <buwanekab@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Praveenjt94/Police-Mobile",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular-route": "^1.6.4",
+    "Ionicons": "ionicons#2.0.1",
+    "ngstorage": "^0.3.11"
+  }
+}

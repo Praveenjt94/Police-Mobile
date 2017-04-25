@@ -1,0 +1,23 @@
+<div class="main-content" ng-controller="DashboardController" ng-init="__init__()">
+    <div class="container-fluid">
+        <!-- OVERVIEW -->
+        <div class="panel panel-headline">
+            <div class="panel-heading">
+                <h3 class="panel-title">Profile Overview</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="metric">
+                            <span class="icon"><i class="fa fa-eye"></i></span>
+                            <p>
+                                <span class="number">{{ stats.fine_count}}</span>
+                                <span class="title">Fines</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

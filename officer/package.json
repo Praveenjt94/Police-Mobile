@@ -1,0 +1,19 @@
+{
+  "name": "police_mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praveenjt94/Police-Mobile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Praveenjt94/Police-Mobile/issues"
+  },
+  "homepage": "https://github.com/Praveenjt94/Police-Mobile#readme"
+}

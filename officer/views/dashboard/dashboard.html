@@ -1,0 +1,110 @@
+<div class="main-content" ng-controller="DashboardController" ng-init="__init__()">
+    <div class="container-fluid">
+        <!-- OVERVIEW -->
+        <div class="panel panel-headline">
+            <div class="panel-heading">
+                <h3 class="panel-title">Profile Overview</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="metric">
+                            <span class="icon"><i class="fa fa-download"></i></span>
+                            <p>
+                                <span class="number">{{ stats.revenue}}</span>
+                                <span class="title">Revenue</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-3">-->
+                    <!--<div class="metric">-->
+                    <!--<span class="icon"><i class="fa fa-shopping-bag"></i></span>-->
+                    <!--<p>-->
+                    <!--<span class="number">203</span>-->
+                    <!--<span class="title">Fines</span>-->
+                    <!--</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="col-md-3">
+                        <div class="metric">
+                            <span class="icon"><i class="fa fa-eye"></i></span>
+                            <p>
+                                <span class="number">{{ stats.fine_count}}</span>
+                                <span class="title">Fines</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OVERVIEW -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- RECENT PURCHASES -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Recent Activities</h3>
+                        <div class="right">
+                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i>
+                            </button>
+                            <button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+                        </div>
+                    </div>
+                    <div class="panel-body no-padding">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Order No.</th>
+                                <th>Name</th>
+                                <th>Amount</th>
+                                <th>Date &amp; Time</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>763648</td>
+                                <td>Steve</td>
+                                <td>$122</td>
+                                <td>Oct 21, 2016</td>
+                            </tr>
+                            <tr>
+                                <td>763649</td>
+                                <td>Amber</td>
+                                <td>$62</td>
+                                <td>Oct 21, 2016</td>
+                            </tr>
+                            <tr>
+                                <td>763650</td>
+                                <td>Michael</td>
+                                <td>$34</td>
+                                <td>Oct 18, 2016</td>
+                            </tr>
+                            <tr>
+                                <td>763651</td>
+                                <td>Roger</td>
+                                <td>$186</td>
+                                <td>Oct 17, 2016</td>
+                            </tr>
+                            <tr>
+                                <td>763652</td>
+                                <td>Smith</td>
+                                <td>$362</td>
+                                <td>Oct 16, 2016</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-6"><span class="panel-note"><i
+                                    class="fa fa-clock-o"></i> Last 24 hours</span></div>
+                            <div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All Purchases</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END RECENT PURCHASES -->
+            </div>
+        </div>
+    </div>
+</div>

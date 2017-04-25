@@ -1,0 +1,28 @@
+<!-- SIDEBAR -->
+<div ng-controller="HeaderController">
+    <div class="sidebar" ng-style="{ 'left':layout.left+'px', 'z-index':layout.z_index }">
+        <div class="brand">
+            <a href="index.html"><img src="assets/build/img/user.jpg" style="width: 50%"
+                                      class="img-responsive logo"></a>
+            <p style="color: #FFF">{{ logged_user.name }}</p>
+        </div>
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a ng-click="locationRedirect('/dashboard')"><i class="lnr lnr-home"></i> <span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a ng-click="locationRedirect('/finesheet')"><i class="lnr lnr-bookmark"></i>
+                            <span>View Fines</span></a>
+                    </li>
+                    <li>
+                        <a ng-click="locationRedirect('/logout')"><i class="lnr lnr-exit"></i>
+                            <span>Logout</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- END SIDEBAR -->
