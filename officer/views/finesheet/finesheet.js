@@ -5,6 +5,7 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
     $scope.fine.driver_data = {};
     $scope.fine_show = false;
     $scope.fine_rules = [];
+    $scope.driver_not_found = false;
 
     $scope.__init__ = function () {
         $rootScope.$broadcast('logged_in', true);
@@ -50,8 +51,12 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
             console.log(res);
             if (res.data.status == "SUCCESS") {
                 $scope.fine.driver_data = res.data.data;
+                $scope.fine_show = true;
+                $scope.driver_not_found = false;
+            } else {
+                $scope.fine_show = false;
+                $scope.driver_not_found = true;
             }
-            $scope.fine_show = true;
         }, function errorCallback(response) {
             console.error(response);
         });

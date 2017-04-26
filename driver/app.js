@@ -5,4 +5,4 @@ var app = angular.module('police-app', [
 
 // main REST end point
 var APP_TYPE = 'driver';
-var BASE_URL = 'http://192.168.8.101/projects/Police-Web/api/out_services.php';
+var BASE_URL = 'http://192.168.43.165/Projects/Police-Web/api/out_services.php';
