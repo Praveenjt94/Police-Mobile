@@ -14,7 +14,7 @@ app.controller('DashboardController', function DashboardController($scope, $http
             data: {
                 action: 'get_dashboard_stats',
                 type: APP_TYPE,
-                driver_id: $localStorage.user
+                driver_id: $localStorage.user.d_id
             }
         }).then(function (res) {
             console.log(res);

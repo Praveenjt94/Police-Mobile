@@ -2,77 +2,28 @@
     <br>
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title"><b>Search Driver</b></h3>
-        </div>
-        <div class="panel-body">
-            <input class="form-control input-lg" placeholder="Driver License No" type="text" ng-model="driver_id">
-            <br>
-            <button type="button" class="btn btn-primary btn-block" ng-click="search()">Search Driver</button>
-            <br>
+            <h3 class="panel-title"><b>Driver`s Fines</b></h3>
         </div>
     </div>
-    <div class="panel" ng-show="fine_show">
-        <div class="panel-heading">
-            <h3 class="panel-title" style="color: RED"><b>Fine Details</b></h3>
-        </div>
-        <div class="panel-body">
-            <label>First Name</label>
-            <input type="text" class="form-control" placeholder="enter first name" ng-model="fine.driver_data.fname"
-                   required>
-            <br>
-            <label>Last Name</label>
-            <input type="text" class="form-control" placeholder="enter last name" ng-model="fine.driver_data.lname"
-                   required>
-            <br>
-            <label>Address</label>
-            <input type="text" class="form-control" placeholder="enter address" ng-model="fine.driver_data.address"
-                   required>
-            <br>
-            <label>Vehicle No</label>
-            <input type="text" class="form-control" placeholder="enter vehicle no" ng-model="fine.vehicle_no" required>
-            <br>
-            <label>Date of Offence</label>
-            <input type="date" class="form-control" placeholder="enter date of offence" ng-model="fine.date_of_offence"
-                   required>
-            <br>
-            <label>Time</label>
-            <input type="time" class="form-control" placeholder="enter time" ng-model="fine.time" required>
-            <br>
-            <label>Location</label>
-            <input type="text" class="form-control" placeholder="enter location" ng-model="fine.location" required>
-            <br>
-            <label>Category</label>
-            <select class="form-control"
-                    ng-options="fine_rule as fine_rule.rule for fine_rule in fine_rules track by fine_rule.id"
-                    ng-model="fine.category" required></select>
-            <br>
-            <label>Driver License No</label>
-            <input type="text" class="form-control" placeholder="enter D/L no" ng-model="fine.driver_data.driver_no"
-                   required>
-            <br>
-            <label>Competent to Drive</label>
-            <input type="text" class="form-control" placeholder="enter competent to drive"
-                   ng-model="fine.driver_data.category" required>
-            <br>
-            <label>Valid From</label>
-            <input type="date" class="form-control" placeholder="enter valid from" ng-model="fine.valid_from" required>
-            <br>
-            <label>Valid To</label>
-            <input type="date" class="form-control" placeholder="enter valid to" ng-model="fine.valid_to" required>
-            <br>
-            <label>Court</label>
-            <input type="text" class="form-control" placeholder="enter court" ng-model="fine.court" required>
-            <br>
-            <label>Court Date</label>
-            <input type="date" class="form-control" placeholder="enter court date" ng-model="fine.court_date" required>
-            <br>
-            <label>Police Station</label>
-            <input type="text" class="form-control" placeholder="enter police station" ng-model="fine.police_station"
-                   required>
-            <br>
-            <br>
-            <button type="button" class="btn btn-danger btn-block" ng-click="submit()">Submit</button>
-            <br>
-        </div>
-    </div>
+    <ul style="list-style: none;padding-left: 0px">
+        <li ng-repeat="fine in fines" style="margin-bottom: 5px;">
+            <div class="panel" style="padding: 10px">
+                <label style="font-size: 16px;font-weight: bold;text-decoration: underline">Fine {{ $index +1 }}</label>
+                <br>
+                <label><span style="color: blue">Vehicle No :</span> {{ fine.vehicle_no}}</label>
+                <br>
+                <label><span style="color: blue">Date of Offence :</span> {{ fine.date_of_offence | date :
+                    'yyyy-MM-dd'}}</label>
+                <br>
+                <label><span style="color: blue">Time :</span> {{ fine.time | date : 'h:mma'}}</label>
+                <br>
+                <label><span style="color: blue">Location :</span> {{ fine.location }}</label>
+                <br>
+                <label><span style="color: blue">Police Station :</span> {{ fine.police_station }}</label>
+                <br>
+                <button type="button" class="btn btn-primary btn-block">Pay</button>
+            </div>
+        </li>
+    </ul>
+
 </div>
