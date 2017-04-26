@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e79e9e2-0acc-416f-9275-8ffb0f9c8c73" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/app.js" afterPath="$PROJECT_DIR$/driver/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/views/dashboard/dashboard.js" afterPath="$PROJECT_DIR$/driver/views/dashboard/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/views/finesheet/finesheet.html" afterPath="$PROJECT_DIR$/driver/views/finesheet/finesheet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/views/finesheet/finesheet.js" afterPath="$PROJECT_DIR$/driver/views/finesheet/finesheet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officer/app.js" afterPath="$PROJECT_DIR$/officer/app.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -457,12 +453,12 @@
       <option name="presentableId" value="Default" />
       <updated>1493119186355</updated>
       <workItem from="1493119189834" duration="35744000" />
-      <workItem from="1493174518096" duration="3045000" />
+      <workItem from="1493174518096" duration="3472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38789000" />
+    <option name="totallyTimeSpent" value="39216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
