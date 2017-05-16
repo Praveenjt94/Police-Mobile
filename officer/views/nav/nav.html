@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<div ng-controller="NavController">
+<div ng-controller="NavController" ng-init="__init()">
     <nav class="navbar navbar-default" ng-if="logged_status">
         <div class="container-fluid">
             <div class="navbar-btn">
@@ -8,12 +8,36 @@
                 </button>
             </div>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-menu">
+                <button type="button" class="navbar-toggle collapsed" ng-click="showNotification()">
                     <i class="lnr lnr-alarm"></i>
+                    <span class="badge bg-danger">{{notifications.length}}</span>
                 </button>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal" ng-class="show ? 'show' : 'hide'" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="hideNotification()" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Notifications</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="notifications" style="list-style: none;padding-left: 0px;">
+                        <li ng-repeat="item in notifications">
+                            <a href="#" class="notification-item">
+                                <span class="dot bg-warning"></span>{{item.message}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="hideNotification()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- END NAVBAR -->

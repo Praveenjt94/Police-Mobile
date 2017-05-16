@@ -54,42 +54,18 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>Order No.</th>
-                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Vehi. No</th>
+                                <th>Location</th>
                                 <th>Amount</th>
-                                <th>Date &amp; Time</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>763648</td>
-                                <td>Steve</td>
-                                <td>$122</td>
-                                <td>Oct 21, 2016</td>
-                            </tr>
-                            <tr>
-                                <td>763649</td>
-                                <td>Amber</td>
-                                <td>$62</td>
-                                <td>Oct 21, 2016</td>
-                            </tr>
-                            <tr>
-                                <td>763650</td>
-                                <td>Michael</td>
-                                <td>$34</td>
-                                <td>Oct 18, 2016</td>
-                            </tr>
-                            <tr>
-                                <td>763651</td>
-                                <td>Roger</td>
-                                <td>$186</td>
-                                <td>Oct 17, 2016</td>
-                            </tr>
-                            <tr>
-                                <td>763652</td>
-                                <td>Smith</td>
-                                <td>$362</td>
-                                <td>Oct 16, 2016</td>
+                            <tr ng-repeat="row in fines">
+                                <td>{{row.valid_from | date:'yyyy-MM-dd' }}</td>
+                                <td>{{row.vehicle_no}}</td>
+                                <td>{{row.location}}</td>
+                                <td>{{rules[row.fine_rule_id]*150}}</td>
                             </tr>
                             </tbody>
                         </table>

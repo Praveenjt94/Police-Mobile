@@ -8,6 +8,7 @@
             <input class="form-control input-lg" placeholder="Driver License No" type="text" ng-model="driver_id">
             <br>
             <button type="button" class="btn btn-primary btn-block" ng-click="search()">Search Driver</button>
+            {{result}}
             <br>
         </div>
     </div>
@@ -69,6 +70,9 @@
             <label>Police Station</label>
             <input type="text" class="form-control" placeholder="enter police station" ng-model="fine.police_station"
                    required>
+            <br>
+            <label>Attach Image</label>
+            <input type="file" class="form-control" ng-model="fine.police_station">
             <br>
             <br>
             <button type="button" class="btn btn-danger btn-block" ng-click="submit()">Submit</button>

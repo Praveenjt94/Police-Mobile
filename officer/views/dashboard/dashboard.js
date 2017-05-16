@@ -1,5 +1,7 @@
 app.controller('DashboardController', function DashboardController($scope, $http, $rootScope, $localStorage) {
     $scope.stats = {fine_count: 0, revenue: 0};
+    $scope.fines = [];
+    $scope.rules = [];
     $scope.__init__ = function () {
         $rootScope.$broadcast('logged_in', true);
         $rootScope.$broadcast('logged_user', true);
@@ -20,6 +22,8 @@ app.controller('DashboardController', function DashboardController($scope, $http
             console.log(res);
             if (res.data.status == "SUCCESS") {
                 $scope.stats = res.data.data;
+                $scope.fines = res.data.data.fines;
+                $scope.rules = res.data.data.rules;
             }
         }, function errorCallback(response) {
             console.error(response);

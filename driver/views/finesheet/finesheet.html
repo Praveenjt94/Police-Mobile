@@ -21,9 +21,48 @@
                 <br>
                 <label><span style="color: blue">Police Station :</span> {{ fine.police_station }}</label>
                 <br>
-                <button type="button" class="btn btn-primary btn-block">Pay</button>
+                <button type="button" class="btn btn-primary btn-block" ng-click="showPay(fine)">Pay</button>
             </div>
         </li>
     </ul>
+
+    <!-- Modal -->
+    <div class="modal" ng-class="show ? 'show' : 'hide'" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="closePay()" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Pay Options</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="notifications" style="list-style: none;padding-left: 0px;">
+                        <li>
+                            <label class="fancy-radio">
+                                <input name="gender" value="male" type="radio">
+                                <span><i></i><img src="assets/images/visa.png" width="50px" style="margin-left: 25px;"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="fancy-radio">
+                                <input name="gender" value="male" type="radio">
+                                <span><i></i><img src="assets/images/mastercad.jpg" width="50px" style="margin-left: 25px;"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="fancy-radio">
+                                <input name="gender" value="male" type="radio">
+                                <span><i></i><img src="assets/images/ez_cash.png" width="50px" style="margin-left: 25px;"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="pay()">Pay</button>
+                    <button type="button" class="btn btn-default" ng-click="closePay()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
