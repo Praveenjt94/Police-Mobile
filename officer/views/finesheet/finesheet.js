@@ -1,4 +1,4 @@
-app.controller('FineSheetController', function FineSheetController($scope, $localStorage, $http, $rootScope) {
+app.controller('FineSheetController', function FineSheetController($scope, $localStorage, $http, $rootScope, Upload) {
     $scope.driver_id = "";
     $scope.fine = {};
     $scope.fine.officer_data = $localStorage.user;
@@ -6,26 +6,19 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
     $scope.fine_show = false;
     $scope.fine_rules = [];
     $scope.driver_not_found = false;
-    $scope.result = {};
+    $scope.photo = "";
+    $scope.result = "";
+    $scope.disabled = false;
 
     $scope.__init__ = function () {
         $rootScope.$broadcast('logged_in', true);
         $rootScope.$broadcast('logged_user', true);
         loadRules();
-        getCurrentlocation();
     };
 
-    function getCurrentlocation() {
-        var options = {
-            enableHighAccuracy: true
-        };
-        navigator.geolocation.getCurrentPosition(function (pos) {
-                $scope.position = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-                console.log(JSON.stringify($scope.position));
-            },
-            function (error) {
-                alert('Unable to get location: ' + error.message);
-            }, options);
+    function getUserLocation() {
+        // send android webview js interface call to get mobile`s geo location
+        $scope.result = Android.getLocation();
     }
 
     function loadRules() {
@@ -49,7 +42,7 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
     }
 
     $scope.search = function () {
-        // getUserLocation();
+        getUserLocation();
         $scope.fine = {};
         $scope.fine.officer_data = $localStorage.user;
         $scope.fine.driver_data = {};
@@ -73,54 +66,40 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
                 $scope.fine_show = false;
                 $scope.driver_not_found = true;
             }
+            $scope.fine.location = $scope.result;
         }, function errorCallback(response) {
             console.error(response);
         });
     };
 
-    function getUserLocation() {
-        $http({
-            method: 'POST',
-            url: 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCqFHJy76YoPt87Xlg_USEr7ACKVMiU99s',
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-        }).then(function (res) {
-            // console.log(res);
-            $http({
-                method: 'GET',
-                url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + res.data.location.lat + ',' + res.data.location.lng + '&key=AIzaSyCqFHJy76YoPt87Xlg_USEr7ACKVMiU99s',
-                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+    $scope.submit = function () {
+        if (!$scope.disabled) {
+            $scope.disabled = true;
+            // new
+            Upload.upload({
+                url: BASE_URL,
+                data: {
+                    file: $scope.photo,
+                    action: 'save_fine',
+                    type: APP_TYPE,
+                    fine: $scope.fine
+                }
             }).then(function (res) {
                 console.log(res);
-                $scope.result = res.data.results[0];
-            }, function errorCallback(response) {
-                console.error(response);
+                if (res.data.status == "SUCCESS") {
+                    $scope.fine = {};
+                    $scope.fine.officer_data = $localStorage.user;
+                    $scope.fine.driver_data = {};
+                    $scope.driver_id = "";
+                    $scope.fine_show = false;
+                    $scope.photo = "";
+                }
+                $scope.disabled = false;
+                // $location.path("/finesheet");
+            }, function (resp) {
+                console.log('Error status: ' + resp.status);
+                $scope.disabled = false;
             });
-        }, function errorCallback(response) {
-            console.error(response);
-        });
-    }
-
-    $scope.submit = function () {
-        $http({
-            method: 'POST',
-            url: BASE_URL,
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-            data: {
-                action: 'save_fine',
-                type: APP_TYPE,
-                fine: $scope.fine
-            }
-        }).then(function (res) {
-            console.log(res);
-            if (res.data.status == "SUCCESS") {
-                $scope.fine = {};
-                $scope.fine.officer_data = $localStorage.user;
-                $scope.fine.driver_data = {};
-                $scope.driver_id = "";
-                $scope.fine_show = false;
-            }
-        }, function errorCallback(response) {
-            console.error(response);
-        });
+        }
     };
 });

@@ -1,7 +1,6 @@
 {
   "name": "police_mobile",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/Praveenjt94/Police-Mobile/issues"
   },
-  "homepage": "https://github.com/Praveenjt94/Police-Mobile#readme"
+  "homepage": "https://github.com/Praveenjt94/Police-Mobile#readme",
+  "description": "",
+  "dependencies": {
+    "ng-file-upload": "^12.2.13"
+  }
 }

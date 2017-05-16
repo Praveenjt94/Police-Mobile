@@ -8,7 +8,6 @@
             <input class="form-control input-lg" placeholder="Driver License No" type="text" ng-model="driver_id">
             <br>
             <button type="button" class="btn btn-primary btn-block" ng-click="search()">Search Driver</button>
-            {{result}}
             <br>
         </div>
     </div>
@@ -72,10 +71,16 @@
                    required>
             <br>
             <label>Attach Image</label>
-            <input type="file" class="form-control" ng-model="fine.police_station">
+            <!--<input type="file" class="form-control" ng-model="photo">-->
+            <div class="button" ngf-select ng-model="photo" name="file" ngf-pattern="'image/*'"
+                 ngf-accept="'image/*'" ngf-max-size="20MB">Select Image
+            </div>
+            <img ngf-thumbnail="photo || 'assets/images/default.png'" style="width: 100px;">
             <br>
             <br>
-            <button type="button" class="btn btn-danger btn-block" ng-click="submit()">Submit</button>
+            <button type="button" class="btn btn-danger btn-block" ng-class="disabled ? 'disabled' : ''"
+                    ng-click="submit()">Submit
+            </button>
             <br>
         </div>
     </div>

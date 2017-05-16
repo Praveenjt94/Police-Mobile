@@ -1,6 +1,7 @@
 var app = angular.module('police-app', [
     'ngRoute',
-    'ngStorage'
+    'ngStorage',
+    'ngFileUpload'
 ]);
 
 // main REST end point
