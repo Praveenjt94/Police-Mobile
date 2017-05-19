@@ -2,10 +2,13 @@
     <br>
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title"><b>Search Driver</b></h3>
+            <h3 class="panel-title"><b>Search Driver</b><span ng-if="invalid_lic_no"
+                                                              style="margin-left: 20px;font-size:16px;color: red">enter valid license ID</span>
+            </h3>
         </div>
         <div class="panel-body">
-            <input class="form-control input-lg" placeholder="Driver License No" type="text" ng-model="driver_id">
+            <input class="form-control input-lg" placeholder="Driver License ID" type="text" ng-model="driver_id"
+                   ng-keypress="changeText()">
             <br>
             <button type="button" class="btn btn-primary btn-block" ng-click="search()">Search Driver</button>
             <br>
