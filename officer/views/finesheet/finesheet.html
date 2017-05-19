@@ -44,6 +44,11 @@
             <label>Location</label>
             <input type="text" class="form-control" placeholder="enter location" ng-model="fine.location" required>
             <br>
+            <label>Type</label>
+            <select class="form-control"
+                    ng-options="acc_type as acc_type.name for acc_type in acc_types track by acc_type.id"
+                    ng-model="fine.acc_type" required></select>
+            <br>
             <label>Category</label>
             <select class="form-control"
                     ng-options="fine_rule as fine_rule.rule for fine_rule in fine_rules track by fine_rule.id"

@@ -10,6 +10,15 @@ app.controller('FineSheetController', function FineSheetController($scope, $loca
     $scope.result = "";
     $scope.disabled = false;
     $scope.invalid_lic_no = false;
+    $scope.acc_types = [{
+        id: 'accident',
+        name: 'Accident'
+    }, {
+        id: 'traffic',
+        name: 'Traffic'
+    }];
+    $scope.fine.acc_type = $scope.acc_types[0];
+    $scope.fine.province = "Western Province";
     var DRIVER_LIC_REGX = /^([A-Z]{1})(\d{7})$/;
 
     $scope.__init__ = function () {
