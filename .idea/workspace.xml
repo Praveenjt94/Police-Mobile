@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e79e9e2-0acc-416f-9275-8ffb0f9c8c73" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officer/app.js" afterPath="$PROJECT_DIR$/officer/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officer/views/finesheet/finesheet.html" afterPath="$PROJECT_DIR$/officer/views/finesheet/finesheet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/officer/views/finesheet/finesheet.js" afterPath="$PROJECT_DIR$/officer/views/finesheet/finesheet.js" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/views/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/driver/views/dashboard/dashboard.html" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +45,15 @@
         <entry file="file://$PROJECT_DIR$/driver/views/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
+<<<<<<< HEAD
               <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding />
+=======
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              <folding>
+                <marker date="1494965010972" expanded="true" signature="4362:4377" ph="..." />
+              </folding>
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
             </state>
           </provider>
         </entry>
@@ -50,9 +61,17 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/driver/app.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="119">
               <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding />
+=======
+            <state relative-caret-position="136">
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <marker date="1494965010059" expanded="true" signature="39:71" ph="[...]" />
+              </folding>
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
             </state>
           </provider>
         </entry>
@@ -70,6 +89,7 @@
       <file leaf-file-name="finesheet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officer/views/finesheet/finesheet.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="238">
               <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
@@ -85,13 +105,64 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+=======
+            <state relative-caret-position="204">
+              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="31" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="finesheet.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/officer/views/finesheet/finesheet.js">
+=======
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/officer/views/dashboard/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/driver/views/dashboard/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/driver/views/header/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/driver/views/nav/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/officer/routes.js">
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
@@ -104,7 +175,7 @@
         <entry file="file://$PROJECT_DIR$/officer/views/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -114,8 +185,17 @@
         <entry file="file://$PROJECT_DIR$/officer/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1054">
+<<<<<<< HEAD
               <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
               <folding />
+=======
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <marker date="1494965010076" expanded="true" signature="2419:2772" ph="..." />
+                <marker date="1494965010076" expanded="true" signature="2456:2743" ph="..." />
+                <marker date="1494965010076" expanded="true" signature="2554:2713" ph="..." />
+              </folding>
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
             </state>
           </provider>
         </entry>
@@ -172,7 +252,6 @@
         <option value="$PROJECT_DIR$/officer/views/dashboard/dashboard.html" />
         <option value="$PROJECT_DIR$/officer/views/dashboard/dashboard.js" />
         <option value="$PROJECT_DIR$/officer/views/nav/nav.html" />
-        <option value="$PROJECT_DIR$/driver/views/dashboard/dashboard.html" />
         <option value="$PROJECT_DIR$/driver/views/finesheet/finesheet.html" />
         <option value="$PROJECT_DIR$/driver/views/finesheet/finesheet.js" />
         <option value="$PROJECT_DIR$/officer/index.html" />
@@ -180,6 +259,11 @@
         <option value="$PROJECT_DIR$/officer/app.js" />
         <option value="$PROJECT_DIR$/officer/views/finesheet/finesheet.js" />
         <option value="$PROJECT_DIR$/officer/views/finesheet/finesheet.html" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/officer/views/login/login.js" />
+        <option value="$PROJECT_DIR$/driver/views/dashboard/dashboard.html" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
       </list>
     </option>
   </component>
@@ -196,8 +280,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,7 +298,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="Scope" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,7 +325,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="officer" />
+              <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,7 +339,29 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="officer" />
+              <option name="myItemId" value="driver" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nav" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Police-Mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Police-Mobile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -269,7 +379,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="officer" />
+              <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -277,7 +387,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="finesheet" />
+=======
+              <option name="myItemId" value="header" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +406,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="driver" />
+<<<<<<< HEAD
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,6 +421,8 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="driver" />
+=======
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -315,6 +432,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="Police-Mobile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
@@ -332,12 +450,19 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="login" />
+=======
+              <option name="myItemId" value="dashboard" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+      <pane id="Scratches" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,19 +582,32 @@
       <workItem from="1493174518096" duration="3472000" />
       <workItem from="1493180103637" duration="2711000" />
       <workItem from="1493189400772" duration="6760000" />
+<<<<<<< HEAD
       <workItem from="1494922361915" duration="32676000" />
       <workItem from="1495175337932" duration="4324000" />
+=======
+      <workItem from="1494922361915" duration="30804000" />
+      <workItem from="1494966588297" duration="1069000" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="85687000" />
+=======
+    <option name="totallyTimeSpent" value="80560000" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14635417" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -501,6 +639,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/driver/views/finesheet/finesheet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -508,11 +647,12 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
     <entry file="file://$PROJECT_DIR$/driver/views/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,6 +701,30 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/driver/views/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/views/dashboard/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/views/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
     <entry file="file://$PROJECT_DIR$/officer/views/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -594,6 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -609,6 +773,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+=======
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
         </state>
       </provider>
     </entry>
@@ -637,6 +803,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -645,14 +812,21 @@
         <state relative-caret-position="153">
           <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="23" />
           <folding />
+=======
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/officer/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1054">
           <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
           <folding />
+=======
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
         </state>
       </provider>
     </entry>
@@ -667,15 +841,49 @@
     <entry file="file://$PROJECT_DIR$/driver/views/dashboard/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
+<<<<<<< HEAD
           <caret line="13" column="72" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="72" />
           <folding />
+=======
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <marker date="1494965010972" expanded="true" signature="4362:4377" ph="..." />
+          </folding>
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/driver/views/dashboard/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="238">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="44" />
+=======
+        <state relative-caret-position="1054">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1494965010076" expanded="true" signature="2419:2772" ph="..." />
+            <marker date="1494965010076" expanded="true" signature="2456:2743" ph="..." />
+            <marker date="1494965010076" expanded="true" signature="2554:2713" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officer/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <marker date="1494965010059" expanded="true" signature="39:71" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officer/views/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           <folding />
         </state>
       </provider>
@@ -698,20 +906,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/driver/app.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+=======
+        <state relative-caret-position="204">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="31" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officer/app.js">
+    <entry file="file://$PROJECT_DIR$/officer/views/dashboard/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+=======
+        <state relative-caret-position="253">
+          <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/officer/views/finesheet/finesheet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -719,14 +938,37 @@
           <folding>
             <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/driver/views/dashboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/officer/views/finesheet/finesheet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/driver/views/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/views/nav/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="12" />
+>>>>>>> 29863bc7b201943dec338bc01caeab847a708631
           <folding />
         </state>
       </provider>
